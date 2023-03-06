@@ -1,4 +1,4 @@
 FROM amazoncorretto:8
-COPY target\sold*.jar sold.jar
-ENTRYPOINT [ "java", "-jar", "\\sold.jar" ]
+COPY target/sold*.war sold.war
+ENTRYPOINT [ "java", "-war", "/sold.war" ]
 EXPOSE 7070
